@@ -25,6 +25,8 @@ public class LoginPage
 	
 	@FindBy(xpath="(//a[@class='ico-1'])[1]")private WebElement MyProfileButton;
 	
+	
+	
 //  Constructors
 	
 	public LoginPage(WebDriver driver)
@@ -68,5 +70,8 @@ public class LoginPage
 	{
 		MyProfileButton.click();
 	}
+	
+	
+
 	
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 
 //import org.openqa.selenium.interactions.Actions;
 
@@ -16,8 +17,8 @@ public class policy_bazaarstudy {
 	public static void main(String[] args) throws InterruptedException {
 		ChromeOptions opt=new ChromeOptions();
 		opt.addArguments("disable-notifications");
-		WebDriver driver=new ChromeDriver(opt);
-		
+//		WebDriver driver=new ChromeDriver(opt);
+		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		
 //		Open URL

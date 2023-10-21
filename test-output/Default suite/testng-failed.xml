@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_NG1.ExcludeMethods">
+      <class name="pkg_TestPolicy.Policy_testExecution">
         <methods>
-          <include name="Method1"/>
+          <include name="LoginPB"/>
+          <include name="loggingOut"/>
+          <include name="Closingwindw"/>
+          <include name="validateUserId"/>
+          <include name="LauchingURL"/>
         </methods>
-      </class> <!-- test_NG1.ExcludeMethods -->
+      </class> <!-- pkg_TestPolicy.Policy_testExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
