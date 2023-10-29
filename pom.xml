@@ -35,7 +35,7 @@
           <version>3.1.2</version>
           <configuration>
             <suiteXmlFiles>
-              <suiteXmlFile>PolicybazaarCBtesting.xml</suiteXmlFile>
+              <suiteXmlFile>PbtestExecution.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>

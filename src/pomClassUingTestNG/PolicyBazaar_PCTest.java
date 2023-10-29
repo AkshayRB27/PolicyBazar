@@ -69,13 +69,13 @@ public class PolicyBazaar_PCTest {
 	@BeforeMethod 
 	public void logintoPB()
 	{
-		CommonClass_methods.implicitWait(driver, 1000);
+		CommonClass_methods.implicitWait(driver, 2000);
 		login.ClickonSignInbuttonLoginpage();
-		CommonClass_methods.implicitWait(driver, 1500);
+		CommonClass_methods.implicitWait(driver, 2500);
 		login.EntermobNum();
-		CommonClass_methods.implicitWait(driver, 1500);
+		CommonClass_methods.implicitWait(driver, 2500);
 		login.ClickOnSignInwithPWD();
-		CommonClass_methods.implicitWait(driver, 1500);
+		CommonClass_methods.implicitWait(driver, 2500);
 		login.EnterPasswrd();
 		CommonClass_methods.implicitWait(driver, 1000);
 		login.ClickOnSigninPwdpage();

@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pkg_Base.Base;
@@ -22,7 +23,7 @@ public class Policy_testExecution extends Base
 {
 	Pom_Policy login;
 	myAccount_Policy myAcc;
-	
+//	@Parameters("browserName")
 	@BeforeClass
 	public void LauchingURL () throws InterruptedException
 	{
@@ -36,21 +37,21 @@ public class Policy_testExecution extends Base
 	@BeforeMethod
 	public void LoginPB() throws InterruptedException
 	{
-		UtilityPolicy.wait(1000);
-		login.ClickonSignInbuttonLoginpage();
 		UtilityPolicy.wait(2000);
+		login.ClickonSignInbuttonLoginpage();
+		UtilityPolicy.wait(1000);
 		login.EntermobNum();
-		UtilityPolicy.wait(1000);
+		UtilityPolicy.wait(3000);
 		login.ClickOnSignInwithPWD();
-		UtilityPolicy.wait(1000);
+		UtilityPolicy.wait(3000);
 		login.EnterPasswrd();
-		UtilityPolicy.wait(1000);
+		UtilityPolicy.wait(2000);
 		login.ClickOnSigninPwdpage();
-		UtilityPolicy.wait(1000);
+		UtilityPolicy.wait(2000);
 		login.ClickonMyAccount();
-		UtilityPolicy.wait(1000);
+		UtilityPolicy.wait(2000);
 		login.ClickonMyProfile();
-		UtilityPolicy.wait(1000);
+		UtilityPolicy.wait(2000);
 		Set<String> allwindowid = driver.getWindowHandles();
 		List<String> id= new ArrayList<>(allwindowid);
 		driver.switchTo().window(id.get(1));

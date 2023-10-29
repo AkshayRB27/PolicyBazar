@@ -2,6 +2,8 @@ package pkg_Base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 
 public class Base 
@@ -20,6 +22,7 @@ public class Base
 	
 	public void ClosingURL()
 	{
+		
 		Reporter.log("Closing URL", true);
 		driver.quit();
 	}

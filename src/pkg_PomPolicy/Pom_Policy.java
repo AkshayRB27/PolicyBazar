@@ -13,7 +13,7 @@ public class Pom_Policy
 	
 	@FindBy(className = "sign-in") private WebElement SignInbuttononLoginpage;
 	@FindBy(xpath = "(//input[@type='number'])[2]") private WebElement EnterMobilenum ;
-	@FindBy(xpath = "(//a[@id='central-loggin-with-pwd'])[2]") private WebElement SignInwithPasswrdButton;
+	@FindBy(xpath= "(//span[text()='Sign in with Password'])[2]") private WebElement SignInwithPasswrdButton;
 	@FindBy(xpath = "//input[@type='password']") private WebElement EnterPWD;
 	@FindBy(xpath="//span[text()='Sign in']")private WebElement SignInbuttonOnpwdpage;
 	@FindBy(className = "userprofile") private WebElement MyAccount;
