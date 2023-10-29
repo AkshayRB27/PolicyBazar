@@ -1,6 +1,6 @@
 package pomClassUingTestNG;
 
-import org.apache.commons.logging.Log;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
